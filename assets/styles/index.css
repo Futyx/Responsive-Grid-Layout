@@ -25,7 +25,7 @@ body {
 }
 .box-group {
   background: var(--secondary-color);
-  padding: 33px 16px 133px 16px;
+  padding: 33px 16px 33px 16px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -179,42 +179,43 @@ body {
   .screen {
     display: grid;
     gap: 16px;
-    /* grid-template-areas:
-      "weather weather gaming gaming gaming  "
-      "date date gaming gaming  gaming"
-      "email email quote quote  feeling "; */
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "weather weather gaming gaming gaming gaming  "
+      "date date gaming gaming gaming  gaming"
+      "email email quote quote feeling  feeling ";
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
   }
   .weather {
-    grid-column: 1/5;
-    grid-row: 1/2;
-    /* grid-area: weather; */
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+    grid-area: weather;
   }
   .date {
-    grid-column: 1/5;
-    grid-row: 2/3;
-    /* grid-area: date; */
+    /* grid-column: 1/2;
+    grid-row: 2/3; */
+    grid-area: date;
   }
   .email {
-    grid-column: 1/5;
-    grid-row: 3/5;
-    /* grid-area: email; */
+    /* grid-column: 1/2;
+    grid-row: 3/5; */
+    grid-area: email;
   }
   .gaming {
-    grid-column: 5/13;
-    grid-row: 1/3;
-    /* grid-area: gaming; */
+    /* grid-column: 2/6;
+    grid-row: 1/3; */
+    grid-area: gaming;
   }
   .quote {
-    grid-column: 5/9;
-    grid-row: 3/5;
-    /* grid-area: quote; */
+    /* grid-column: 2/4;
+    grid-row: 3/5; */
+    grid-area: quote;
   }
   .feeling {
-    grid-column: 9/13;
-    grid-row: 3/5;
-    /* grid-area: feeling; */
+    /* margin: 0;
+    grid-column: 4/6;
+    grid-row: 3/5; */
+    grid-area: feeling;
   }
   .navigation {
     display: flex;
@@ -229,6 +230,7 @@ body {
   }
 
   .gaming-img {
+    width: 100%;
     height: 320px;
     display: block;
   }
