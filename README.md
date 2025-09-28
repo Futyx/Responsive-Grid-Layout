@@ -12,7 +12,7 @@ Pure Responsiveness: Relies only on Media Queries and flexible CSS units (no hea
 
 Clean and Maintainable CSS: Focuses on clear class naming and efficient layout properties.
 
-🚀 Live Demo [https://futyx.github.io/Responsive-Grid-Layout-/]
+🚀 Live Demo [https://futyx.github.io/Responsive-Grid-Layout/]
 🛠️ Getting Started
 Installation
 Clone the Repository:
